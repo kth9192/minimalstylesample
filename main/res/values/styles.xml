@@ -1,0 +1,74 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowContentTransitions">true</item>
+        <!--&lt;!&ndash; specify window enter and exit transitions &ndash;&gt;-->
+        <!--<item name="android:windowEnterTransition">@transition/custom_window_transition</item>-->
+        <!--<item name="android:windowExitTransition">@transition/custom_window_transition</item>-->
+
+        <!--&lt;!&ndash; specify shared element enter and exit transitions &ndash;&gt;-->
+        <item name="android:windowSharedElementEnterTransition">@transition/custom_shared_element_transition</item>
+
+    </style>
+
+    <style name="CustomBar" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <item name="colorPrimary">@android:color/white</item>
+        <item name="android:statusBarColor">@android:color/white</item>
+        <item name="android:titleTextStyle">@style/ToolbarTextStyle</item>
+
+        <item name="android:actionOverflowButtonStyle">@style/DrawerArrowStyle</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="android:popupMenuStyle">@style/OverflowMenu</item>
+
+    </style>
+
+    <style name="CustomBarForDetail" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <item name="colorPrimary">@android:color/white</item>
+        <item name="android:statusBarColor">@android:color/white</item>
+        <item name="android:titleTextStyle">@style/ToolbarTextStyle</item>
+
+        <item name="android:actionOverflowButtonStyle">@style/DrawerArrowStyle</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="android:popupMenuStyle">@style/OverflowMenu</item>
+
+    </style>
+
+    <style name="AppTheme.Detail">
+
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:actionOverflowButtonStyle">@style/DrawerArrowStyle</item>
+        <item name="android:theme">@style/CustomBarForDetail</item>
+        <item name="android:popupMenuStyle">@style/OverflowMenu</item>
+
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="OverflowMenu"
+        parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:popupMenuStyle">@style/MyOverflowMenu</item>
+        <item name="android:itemTextAppearance">@style/TextAppearance</item>
+    </style>
+    <style name="MyOverflowMenu"
+        parent="Base.Widget.AppCompat.PopupMenu">
+        <item name="android:popupBackground">@android:color/white</item>
+    </style>
+    <style name="TextAppearance">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="ToolbarTextStyle" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="fab_no_label" type="id" />
+    <item name="fab_addcart" type="id" />
+    <item name="fab_direct" type="id" />
+</resources>
