@@ -1,0 +1,2 @@
+# minimalstylesample
+minimalstyle appsample
