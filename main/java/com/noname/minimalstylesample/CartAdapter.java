@@ -53,7 +53,6 @@ public class CartAdapter extends ListAdapter<CartItemModel, CartAdapter.BindingH
                 int preCnt  = Integer.parseInt(holder.getRecyclerCartitemBinding().counter.getText().toString());
                 int result = preCnt + 1;
                 Log.d(TAG, String.valueOf(result));
-//                holder.getRecyclerCartitemBinding().counter.setText(String.valueOf(result));
 
                 cartViewModel.update(new CartItemModel(getItem(position).getName(),
                         result, getItem(position).getPrice()*result , getItem(position).getPrice()));
