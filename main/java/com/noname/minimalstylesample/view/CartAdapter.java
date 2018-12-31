@@ -1,18 +1,17 @@
-package com.noname.minimalstylesample;
+package com.noname.minimalstylesample.view;
 
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.noname.minimalstylesample.R;
 import com.noname.minimalstylesample.databinding.RecyclerCartitemBinding;
 import com.noname.minimalstylesample.model.CartAddModel;
 import com.noname.minimalstylesample.model.CartItemModel;
 import com.noname.minimalstylesample.retrofit.NetRetrofit;
 import com.noname.minimalstylesample.observer.CartObserver;
 import com.noname.minimalstylesample.viewmodel.CartViewModel;
-
-import java.util.ArrayList;
 
 import androidx.annotation.NonNull;
 import androidx.databinding.DataBindingUtil;

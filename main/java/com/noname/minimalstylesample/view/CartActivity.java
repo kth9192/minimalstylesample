@@ -1,16 +1,14 @@
-package com.noname.minimalstylesample;
+package com.noname.minimalstylesample.view;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
-import com.github.nkzawa.emitter.Emitter;
-import com.github.nkzawa.engineio.client.Socket;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
+import com.noname.minimalstylesample.R;
 import com.noname.minimalstylesample.databinding.ActivityCartBinding;
 import com.noname.minimalstylesample.model.CartItemModel;
 import com.noname.minimalstylesample.model.CartDBModel;
@@ -18,14 +16,11 @@ import com.noname.minimalstylesample.observer.CartActivityObserver;
 import com.noname.minimalstylesample.retrofit.NetRetrofit;
 import com.noname.minimalstylesample.viewmodel.CartViewModel;
 
-import java.net.URISyntaxException;
 import java.util.ArrayList;
-import java.util.List;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import retrofit2.Call;

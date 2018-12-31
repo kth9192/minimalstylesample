@@ -1,14 +1,13 @@
-package com.noname.minimalstylesample;
+package com.noname.minimalstylesample.view;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.noname.minimalstylesample.R;
 import com.noname.minimalstylesample.databinding.RecyclerPriceitemBinding;
 import com.noname.minimalstylesample.model.ItemRoom;
 import com.noname.minimalstylesample.observer.PriceObserver;
-import com.noname.minimalstylesample.viewmodel.ItemViewModel;
 
 import androidx.annotation.NonNull;
 import androidx.databinding.DataBindingUtil;

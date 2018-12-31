@@ -22,10 +22,10 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".DetailActivity"
+        <activity android:name=".view.DetailActivity"
             android:theme="@style/AppTheme.Detail"
             />
-        <activity android:name=".CartActivity"/>
+        <activity android:name=".view.CartActivity"/>
     </application>
 
 </manifest>

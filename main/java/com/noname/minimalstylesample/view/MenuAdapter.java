@@ -1,4 +1,4 @@
-package com.noname.minimalstylesample;
+package com.noname.minimalstylesample.view;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
+import com.noname.minimalstylesample.R;
 import com.noname.minimalstylesample.databinding.RecyclerMenuitemBinding;
 import com.noname.minimalstylesample.model.ItemRoom;
 import com.noname.minimalstylesample.repository.MenuRoom;
@@ -37,7 +38,7 @@ public class MenuAdapter extends ListAdapter<MenuRoom, RecyclerView.ViewHolder> 
     private Activity activity;
     private Gson gson = new Gson();
 
-    protected MenuAdapter(Activity activity) {
+    public MenuAdapter(Activity activity) {
         super(DIFF_CALLBACK);
         this.activity = activity;
     }

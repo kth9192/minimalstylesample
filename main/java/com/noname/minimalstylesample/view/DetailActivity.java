@@ -1,4 +1,4 @@
-package com.noname.minimalstylesample;
+package com.noname.minimalstylesample.view;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 import com.leinardi.android.speeddial.SpeedDialActionItem;
 import com.leinardi.android.speeddial.SpeedDialView;
+import com.noname.minimalstylesample.R;
 import com.noname.minimalstylesample.databinding.ActivityDetailBinding;
 import com.noname.minimalstylesample.model.CartAddModel;
 import com.noname.minimalstylesample.model.ItemRoom;
@@ -17,7 +18,6 @@ import com.noname.minimalstylesample.observer.DetailObserver;
 import com.noname.minimalstylesample.viewmodel.ItemViewModel;
 
 import java.util.ArrayList;
-import java.util.Collections;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
